@@ -31,8 +31,9 @@
     "policy": {
       "dependencies": {
         "@babel/runtime": "7.12.13",
-        "@harmony-mfe/scopes.ui.scopes.scopes-list": "0.1.5",
-        "@harmony-mfe/toolbox.string.capitalize": "0.1.5",
+        "@harmony-mfe/design.theme-context": "0.1.0",
+        "@harmony-mfe/scopes.ui.scopes.scopes-list": "0.1.0",
+        "@harmony-mfe/toolbox.string.capitalize": "0.1.0",
         "@teambit/base-ui.elements.image": "0.6.3",
         "@teambit/base-ui.input.error": "0.6.3",
         "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
@@ -42,8 +43,8 @@
         "@testing-library/react": "^10.4.7",
         "@types/classnames": "2.2.11",
         "@types/jest": "26.0.20",
-        "@types/react": "17.0.1",
-        "@types/react-dom": "17.0.0",
+        "@types/react": "16.9.43",
+        "@types/react-dom": "16.9.10",
         "classnames": "2.2.6",
         "jest": "26.6.3"
       },
@@ -68,17 +69,22 @@
      * configure all components namespaced with "envs" with the teambit
      * official Extension environment.
      **/
-    // "{envs/*}": {
-    //   "propagate": false,
-    //   "teambit.harmony/aspect": {}
-    // },
+    "{envs/*}": {
+      "propagate": false,
+      "teambit.harmony/aspect": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {}
+        }
+      }
+    },
     /**
      * configure all components namespaced with "ui" with the custom mfe-react extension
      * which exists on this workspace.
      **/
     "{ui/*}": {
       "propagate": false,
-      "teambit.react/react": {}
+      "harmony-mfe.people/envs/mfe-react": {}
     },
     /**
      * configure directories in the workspace root directory to different remote scopes.
