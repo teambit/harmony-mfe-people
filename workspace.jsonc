@@ -1,0 +1,90 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://docs.bit.dev/configuration
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "People team workspace",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "harmony-mfe.people"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "@babel/runtime": "7.12.13",
+        "@harmony-mfe/scopes.ui.scopes.scopes-list": "0.1.5",
+        "@harmony-mfe/toolbox.string.capitalize": "0.1.5",
+        "@teambit/base-ui.elements.image": "0.6.3",
+        "@teambit/base-ui.input.error": "0.6.3",
+        "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
+        "@teambit/base-ui.text.heading": "0.6.3",
+        "@teambit/base-ui.text.paragraph": "0.6.3",
+        "@teambit/scopes.scope-descriptor": "0.0.5",
+        "@testing-library/react": "^10.4.7",
+        "@types/classnames": "2.2.11",
+        "@types/jest": "26.0.20",
+        "@types/react": "17.0.1",
+        "@types/react-dom": "17.0.0",
+        "classnames": "2.2.6",
+        "jest": "26.6.3"
+      },
+      "peerDependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+      }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your workspace.
+   * this is extremely useful for upgrading, aligning and building components with a
+   * new set of dependencies.
+   **/
+  "teambit.workspace/variants": {
+    /**
+     * configure all components namespaced with "envs" with the teambit
+     * official Extension environment.
+     **/
+    // "{envs/*}": {
+    //   "propagate": false,
+    //   "teambit.harmony/aspect": {}
+    // },
+    /**
+     * configure all components namespaced with "ui" with the custom mfe-react extension
+     * which exists on this workspace.
+     **/
+    "{ui/*}": {
+      "propagate": false,
+      "teambit.react/react": {}
+    },
+    /**
+     * configure directories in the workspace root directory to different remote scopes.
+     **/
+    "people": {
+      "defaultScope": "harmony-mfe.people"
+    }
+  }
+}
