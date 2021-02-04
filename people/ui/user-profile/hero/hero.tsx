@@ -35,10 +35,12 @@ export const Hero = ({
   return (
     <div className={classNames(styles.hero, className)} {...rest}>
       <Avatar src={profileImage} alt={`${userName} profile image`} />
-      <Heading className={styles.title}>{title}</Heading>
-      <Paragraph element="div" className={styles.description}>
-        {description}
-      </Paragraph>
+      <div className={styles.heroDetails}>
+        <Heading className={styles.title}>{title}</Heading>
+        <Paragraph element="div" className={styles.description}>
+          {description}
+        </Paragraph>
+      </div>
     </div>
   );
 };

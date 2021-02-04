@@ -9,9 +9,10 @@ User hero example:
 
 ```js live
 <Hero
-  title="hero title"
-  description="hero description"
-  userName="Josh"
-  profileImage="https://s.gravatar.com/avatar/87749023bcfc8c6237d21cf36ebb9188?rating=g&default=blank&size=122&w=122&h=122&fill=fillmax&bg=fff"
+  title="Guy's profile"
+  description="Guy is a hero!"
+  userName="Guy"
+  profileImage="https://s.gravatar.com/avatar/c8be8c21c73d7b3f6f93cda0135853ed?rating=g&default=blank&size=122&w=122&h=122&fill=fillmax&bg=fff"
+  data-testid="test-hero"
 />
 ```
