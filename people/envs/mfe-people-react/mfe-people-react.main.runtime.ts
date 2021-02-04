@@ -1,7 +1,7 @@
 import { MainRuntime } from '@teambit/cli';
 import { EnvsAspect, EnvsMain } from '@teambit/envs';
 import { ReactAspect, ReactMain } from '@teambit/react';
-import { SymphonyReactAspect } from './mfe-react.aspect';
+import { SymphonyReactAspect } from './mfe-people-react.aspect';
 
 export class SymphonyReactMain {
   static runtime = MainRuntime;

@@ -8,7 +8,7 @@ export type SymphonyReactConfig = {
 };
 
 export const SymphonyReactAspect = Aspect.create({
-  id: 'harmony-mfe.people/envs.mfe-react',
+  id: 'harmony-mfe.people/envs.mfe-people-react',
   defaultConfig: {
     symphonyGatewayUrl: 'symphony.bit.dev',
   },

@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -54,9 +54,7 @@
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": [
-      "**/*.spec.ts"
-    ],
+    "devFilePatterns": ["**/*.spec.ts"],
     "strictPeerDependencies": true
   },
   /**
@@ -79,12 +77,12 @@
       }
     },
     /**
-     * configure all components namespaced with "ui" with the custom mfe-react extension
+     * configure all components namespaced with "ui" with the custom mfe-people-react extension
      * which exists on this workspace.
      **/
     "{ui/*}": {
       "propagate": false,
-      "harmony-mfe.people/envs/mfe-react": {}
+      "harmony-mfe.people/envs/mfe-people-react": {}
     },
     /**
      * configure directories in the workspace root directory to different remote scopes.

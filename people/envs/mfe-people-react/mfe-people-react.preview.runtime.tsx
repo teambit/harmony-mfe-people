@@ -2,7 +2,10 @@ import { ReactNode } from 'react';
 import { GraphqlUI, GraphqlAspect } from '@teambit/graphql';
 import { PreviewRuntime } from '@teambit/preview';
 import { ReactAspect, ReactPreview } from '@teambit/react';
-import { SymphonyReactConfig, SymphonyReactAspect } from './mfe-react.aspect';
+import {
+  SymphonyReactConfig,
+  SymphonyReactAspect,
+} from './mfe-people-react.aspect';
 import { ThemeContext } from '@harmony-mfe/design.theme-context';
 
 export class SymphonyReactPreview {

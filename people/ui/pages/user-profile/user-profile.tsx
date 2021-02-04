@@ -17,6 +17,7 @@ export const UserProfile = ({ className, ...rest }: UserProfileProps) => {
     getUser();
   }, []);
 
+  if (isLoading) return <LoaderRibbon active={isLoading} />;
   return (
     <div className={classNames(styles.userProfile, classNames)} {...rest}>
       <Hero
@@ -25,7 +26,6 @@ export const UserProfile = ({ className, ...rest }: UserProfileProps) => {
         userName={user.name}
         profileImage={user.image}
       />
-      <LoaderRibbon active={isLoading} />
       {error !== '' ? <Error>{error}</Error> : <ScopeList list={scopes} />}
     </div>
   );
