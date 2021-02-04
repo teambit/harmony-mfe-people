@@ -5,7 +5,7 @@
         "mainFile": "index.ts",
         "rootDir": "people/envs/mfe-people-react"
     },
-    "harmony-mfe.people/ui/avatar@0.1.0": {
+    "harmony-mfe.people/ui/avatar@0.1.1": {
         "mainFile": "index.ts",
         "rootDir": "people/ui/avatar"
     },
@@ -13,11 +13,11 @@
         "mainFile": "index.ts",
         "rootDir": "people/ui/hooks/use-user"
     },
-    "harmony-mfe.people/ui/pages/user-profile@0.1.0": {
+    "harmony-mfe.people/ui/pages/user-profile@0.1.1": {
         "mainFile": "index.ts",
         "rootDir": "people/ui/pages/user-profile"
     },
-    "harmony-mfe.people/ui/user-profile/hero@0.1.0": {
+    "harmony-mfe.people/ui/user-profile/hero@0.1.1": {
         "mainFile": "index.ts",
         "rootDir": "people/ui/user-profile/hero"
     },
