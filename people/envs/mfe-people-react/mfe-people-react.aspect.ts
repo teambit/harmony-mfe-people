@@ -10,6 +10,6 @@ export type SymphonyReactConfig = {
 export const SymphonyReactAspect = Aspect.create({
   id: 'harmony-mfe.people/envs.mfe-people-react',
   defaultConfig: {
-    symphonyGatewayUrl: 'symphony.bit.dev',
+    symphonyGatewayUrl: 'https://symphony.bit.dev/graphql',
   },
 });

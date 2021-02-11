@@ -31,15 +31,16 @@
     "policy": {
       "dependencies": {
         "@babel/runtime": "7.12.13",
-        "@harmony-mfe/design.theme-context": "0.1.0",
-        "@harmony-mfe/scopes.ui.scopes.scopes-list": "0.1.0",
-        "@harmony-mfe/toolbox.string.capitalize": "0.1.0",
+        "@harmony-mfe/design.theme-context": "0.0.1",
+        "@harmony-mfe/scopes.ui.scopes.scopes-list": "0.0.1",
+        "@harmony-mfe/toolbox.string.capitalize": "0.0.1",
         "@teambit/base-ui.elements.image": "0.6.3",
+        "@teambit/base-ui.hooks.use-graphql-light": "0.0.4",
         "@teambit/base-ui.input.error": "0.6.3",
         "@teambit/base-ui.loaders.loader-ribbon": "0.6.3",
         "@teambit/base-ui.text.heading": "0.6.3",
         "@teambit/base-ui.text.paragraph": "0.6.3",
-        "@teambit/scopes.scope-descriptor": "0.0.5",
+        "@teambit/scopes.scope-descriptor": "0.0.1",
         "@testing-library/react": "^10.4.7",
         "@types/classnames": "2.2.11",
         "@types/jest": "26.0.20",
@@ -49,6 +50,7 @@
         "jest": "26.6.3"
       },
       "peerDependencies": {
+        "graphql": "^14.3.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1"
       }
